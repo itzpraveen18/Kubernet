@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jenkinspod
+spec:
+  containers:
+  - name: jenkins
+    image:  bpraveen18/tomjen:latest 
+    ports:
+    - containerPort: 8080
